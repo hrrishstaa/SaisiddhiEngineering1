@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.home.HomeFragment"
+android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WORK START TIME: 9:00"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE END DATE: 02/03/2020"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_weight="1"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:background="@drawable/piechar1"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:background="@drawable/piechart2"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:background="@drawable/piechart3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="PERSONAL DETAILS"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <TableLayout
+                android:id="@+id/attendancetbl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+            </TableLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageButton
+            android:id="@+id/whatsapp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_whatsapp" />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
